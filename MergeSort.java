@@ -39,4 +39,17 @@ public class MergeSort {
 			data[i] = temp[i - start];
 		}
 	}
+	// Merge two sorted Linked lists.
+	public static void MergedLinkedList(Node A, Node B) {
+		if (A == null) return B;
+		if (B == null) return A;
+		
+		if (A.val < B.val) {
+			A.next = MergedLinkedList(A.next, B);
+			return A;
+		} else {
+			B.next = MergedLinkedList(A, B.next);
+			return B;
+		}
+	}
 }
