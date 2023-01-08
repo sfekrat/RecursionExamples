@@ -1,3 +1,7 @@
+// Best case Time complexity: O(nlogn) 
+// Worst case : O(n^2)
+// Space : Best Case = O(logn)
+// worst case : O(n)
 public class QuickSort {
 	public static void quickSort(int[] data,int low, int high) {
 		if(low < high) {
