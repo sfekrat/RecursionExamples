@@ -7,6 +7,10 @@ public class QuickSort {
 		}
 	}
 	private static int partition(int[] data,int low, int high) {
+		// Quick Note: In order to make this algorithm run in O(nlogn):
+		// You have two options:
+		// 1. Choose the pivot element to be the middle element.
+		// 2. Choose pivot to be a random element in the list.
 		int pivot = data[low];
 		int i = low;
 		int j = high;
